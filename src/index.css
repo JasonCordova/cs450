@@ -1,13 +1,80 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Elza;
+  line-height: 1.2em;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --length: 5em;
+}
+
+.name {
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+.holder {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1D1D1E;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume {
+  padding: 3em 0em;
+  box-sizing: border-box;
+  background-color: white;
+  width: calc(8 * var(--length));
+  margin-top: 3em;
+  margin-bottom: 3em;
+  height: calc(11 * var(--length));
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85em;
+}
+
+.f1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0em 2em 32px;
+  border-bottom: 4px solid #FFC000;
+}
+
+.f2 {
+  padding: 0em 2em;
+}
+
+.cell {
+  padding: 2em 0em;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  font-size: 0.85em;
+}
+
+.cell-title {
+  flex-shrink: 0;
+  width: 120px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.fc {
+  display: flex;
+  flex-direction: column;
+}
+.job {margin-bottom: 1em;}
+
+.fs {
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
 }
