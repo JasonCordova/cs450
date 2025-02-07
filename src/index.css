@@ -27,10 +27,10 @@ body {
   padding: 3em 0em;
   box-sizing: border-box;
   background-color: white;
-  width: calc(8 * var(--length));
+  min-width: calc(8 * var(--length));
   margin-top: 3em;
   margin-bottom: 3em;
-  height: calc(11 * var(--length));
+  min-height: calc(11 * var(--length));
 }
 
 .contacts {
