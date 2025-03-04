@@ -70,6 +70,8 @@ renderChart=()=>{
   chart.selectAll("circle").data(this.state.data).join("circle").attr("r", 5).style("fill", d => d["PredictedSentiment"] == "neutral" ? "gray" : (d["PredictedSentiment"] == "positive" ? "green" : "red") )
       .attr("cx", d => xScale(d["Dimension 1"])).attr("cy", d => yScale(d["Dimension 2"]))
 
+
+      
   d3.select("g").call(brush);
 
   const text = d3.select(".child2");
